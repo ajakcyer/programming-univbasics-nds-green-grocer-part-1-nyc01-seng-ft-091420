@@ -23,7 +23,7 @@ def consolidate_cart(cart)
   cart.count do |cart_hashes|
     cart.count(cart_hashes)
     cart_hashes[:count] = cart.count(cart_hashes)
-    receipt.
+    receipt
     
     # name = cart_hashes[:item]
     # binding.pry
