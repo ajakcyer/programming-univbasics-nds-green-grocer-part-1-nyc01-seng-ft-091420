@@ -24,31 +24,10 @@ def consolidate_cart(cart)
   cart.each do |cart_hashes|
     name = cart_hashes[:item]
     lookup = find_item_by_name_in_collection(name, cart)
-    # cart.count(lookup)
     cart_hashes[:count] = cart.count(lookup)
-    # binding.pry
     receipt.push(cart_hashes)
-    
-    # name = cart_hashes[:item]
-    # binding.pry
-    # find_item_by_name_in_collection(name, cart).count(cart_hashes)
-    # binding.pry
   end
 
-
-
-
-
-
-
-# new_cart = {}
-  
-#   cart.each do |cart_array|          #cart_array = ipc => values
-#     cart_array.each do |cart_key, cart_val| #cart_key = i/p/c    cart_val =
-      
-      
-#     end
-#   end
 end
 
 
