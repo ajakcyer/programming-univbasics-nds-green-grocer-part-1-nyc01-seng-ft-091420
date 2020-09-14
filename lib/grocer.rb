@@ -26,7 +26,7 @@ def consolidate_cart(cart)
     lookup = find_item_by_name_in_collection(name, cart)
     # cart.count(lookup)
     cart_hashes[:count] = cart.count(lookup)
-    binding.pry
+    # binding.pry
     receipt.push(cart_hashes)
     
     # name = cart_hashes[:item]
